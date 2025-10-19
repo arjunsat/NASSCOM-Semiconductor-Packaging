@@ -18,6 +18,9 @@ Testing ensures that no failure occurs due to issues in bonding, interconnection
 
 #  2. Electrical Functionality Checks
 A. Continuity and Open/Short Tests
+<img width="602" height="334" alt="image" src="https://github.com/user-attachments/assets/fe79fb5d-daa5-4666-96cf-e122bccca928" />
+<img width="602" height="287" alt="image" src="https://github.com/userattachments/assets/f8aae877-efea-4a9a-93bf-50570d645606" />
+
 
 These are basic tests to confirm the integrity of electrical connections within the package.
 
