@@ -90,11 +90,11 @@ Modeled thermal expansion and mechanical stress during temperature cycling.
 Packaging Prototype (2.5D)
 Created a conceptual chiplet-based package with RDL and interposer structure.
 
-📂 Repository Structure
-Packaging_Fundamentals_Workshop/
+ # 📂 Repository Structure
+ # Packaging_Fundamentals_Workshop/ #
 │
-├── Module_1_Packaging_Evolution/
-│   ├── notes.md
+# ├──  Module_1_Packaging_Evolution/
+# │   ├── notes.md
 │   ├── comparison_tables.xlsx
 │   └── figures/
 │
