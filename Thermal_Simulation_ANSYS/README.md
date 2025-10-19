@@ -119,4 +119,11 @@ Data sheet
 <img width="602" height="427" alt="image" src="https://github.com/user-attachments/assets/3fc4216e-9017-4d3b-a011-f81ee7941a44" />
 
  # Viewing Results And Exploring Other Package Types
-![Uploading image.png…]()
+<img width="602" height="191" alt="image" src="https://github.com/user-attachments/assets/2617d54c-852b-4b70-9ed0-ec7ce3c1daa1" />
+<img width="602" height="222" alt="image" src="https://github.com/user-attachments/assets/58719c44-bed7-480e-9cad-b7056158d4d9" />
+<img width="602" height="364" alt="image" src="https://github.com/user-attachments/assets/e6232ab0-9be3-4a2e-8310-e19450374280" />
+<img width="602" height="355" alt="image" src="https://github.com/user-attachments/assets/ebe9d0a9-7883-4f6e-8e41-bbc5f66d27ff" />
+<img width="940" height="569" alt="image" src="https://github.com/user-attachments/assets/e9638b74-899e-4550-bc75-d03c98b1d60b" />
+
+
+
