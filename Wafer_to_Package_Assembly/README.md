@@ -111,3 +111,37 @@ So the front side is laminated and the backside is grinded
 <img width="420" height="912" alt="image" src="https://github.com/user-attachments/assets/ee8847bd-5dfd-48d7-a713-e1ea32c211f0" />
 <img width="602" height="123" alt="image" src="https://github.com/user-attachments/assets/5d820a97-fe5c-497e-acb6-fee221be1815" />
 
+<img width="940" height="445" alt="image" src="https://github.com/user-attachments/assets/9e67b4bb-9172-4bd4-84ab-ddc077acfb38" />
+
+<img width="940" height="464" alt="image" src="https://github.com/user-attachments/assets/702274bf-00a4-4feb-86ed-3c3b40a64c0e" />
+
+<img width="940" height="86" alt="image" src="https://github.com/user-attachments/assets/3083822c-2459-4f42-817a-1645b66647af" />
+<img width="733" height="722" alt="image" src="https://github.com/user-attachments/assets/e2e71ac7-b530-47e1-885b-e04401b352c6" />
+
+We are starting with the a wafer it is already diced-----a good die is taken
+
+Then we are going to put this on a substrate.
+The substrate can be leadframe or laminate.-----Die attach stage
+
+how are we attaching?
+using a die attach film 
+
+first we apply some epoxy(glue like thing) on the substrate,
+in different patterns we can apply this epoxy—different pattern implies different features and speed.
+
+then we place the chip on the epoxy
+<img width="226" height="202" alt="image" src="https://github.com/user-attachments/assets/e86a5356-bca3-4304-88d1-33ae3fa27f81" />
+<img width="450" height="525" alt="image" src="https://github.com/user-attachments/assets/0d7936cd-bf9e-4b87-bddc-b539f4132c40" />
+<img width="940" height="407" alt="image" src="https://github.com/user-attachments/assets/397b1665-53fc-4b12-a28d-5eb286c49b78" />
+<img width="530" height="570" alt="image" src="https://github.com/user-attachments/assets/255d5ea6-8775-4f7d-aaca-b6abe4d1bb17" />
+<img width="940" height="538" alt="image" src="https://github.com/user-attachments/assets/b4dfbcbd-ff2d-4f16-8cb3-7db847f1e77c" />
+<img width="946" height="446" alt="image" src="https://github.com/user-attachments/assets/b9667c15-eb1b-4fe7-b5b1-e503932ff4ce" />
+Wirebond packaging is easier and less expensive than flipchip packaging.
+so we only use flip chip if it is absolutely required.
+ 
+<img width="492" height="352" alt="image" src="https://github.com/user-attachments/assets/8cdc44c6-9e6f-423b-95bf-025672134191" />
+<img width="940" height="465" alt="image" src="https://github.com/user-attachments/assets/a2049224-1aa4-4345-a03e-3ffc216318d9" />
+<img width="902" height="495" alt="image" src="https://github.com/user-attachments/assets/2eeb3b71-1351-4dd5-8772-e1ea41fcfda2" />
+With this we can reduce size
+limitation ---if the chip have very fine connection, there will be reliability issues
+<img width="940" height="470" alt="image" src="https://github.com/user-attachments/assets/f18f0a55-63ce-4edb-9e97-bed03aee424c" />
