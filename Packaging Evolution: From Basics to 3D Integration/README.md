@@ -166,6 +166,9 @@ Also the protection of dies are also an important need.
 <img width="940" height="596" alt="image" src="https://github.com/user-attachments/assets/0a74ac37-c085-4552-b461-184713c7bff9" />
 
 <img width="940" height="472" alt="image" src="https://github.com/user-attachments/assets/fb0c07d1-81ed-4d42-98b7-cf67105584b0" />
+
+
+
 1. Through-Hole Mounting
 Older and more robust packaging style — components have leads (pins) that pass through holes drilled in the PCB (Printed Circuit Board) and are soldered on the opposite side.
 ➤ DIP (Dual In-line Package)
@@ -180,7 +183,7 @@ Older and more robust packaging style — components have leads (pins) that pass
 •	Pins arranged in a grid on the underside.
 •	Used for microprocessors and high I/O count ICs.
 •	Example: Intel Pentium processors (older generations).
-________________________________________
+
 ⚙️ 2. Surface Mount Technology (SMT)
 Modern packaging style — components are mounted directly on the PCB surface, no through-holes. Enables miniaturization and higher component density.
 ➤ QFN (Quad Flat No-lead)
@@ -202,8 +205,7 @@ Modern packaging style — components are mounted directly on the PCB surface, n
 ➤ PoP (Package on Package)
 •	Vertical stacking of ICs — typically logic (CPU) on bottom, memory (DRAM) on top.
 •	Reduces board area, used in smartphones and compact SoCs.
-________________________________________
-💻 3. Advanced Multi-Chip Packages
+ 3. Advanced Multi-Chip Packages
 ➤ MCM (Multi-Chip Module – e.g., Intel Broadwell)
 •	Multiple dies integrated in a single package substrate.
 •	Enables heterogeneous integration (CPU + GPU, logic + memory).
@@ -212,8 +214,7 @@ ________________________________________
 •	Advanced 2.5D packaging by TSMC.
 •	Combines multiple dies (GPU + HBM memory) on a silicon interposer.
 •	Offers massive bandwidth and power efficiency for AI/HPC chips like Nvidia H100.
-________________________________________
-🧠 Summary Table
+ Summary Table
 Mounting Type	Package	Description	Example Use
 Through-hole	DIP	Dual row pins	Logic ICs, MCUs
 Through-hole	TO	Metal can	Power transistors
@@ -230,8 +231,7 @@ What are we putting this die on-----carrier
 
 <img width="940" height="572" alt="image" src="https://github.com/user-attachments/assets/cd8446bf-4250-4508-b448-2f3dcc29597e" />
 This image shows two important aspects of IC packaging — the carrier materials used for mechanical support and the interconnection methods used to connect the silicon die to the package substrate.
-________________________________________
-🧱 1. Options for Carrier
+ 1. Options for Carrier
 The carrier (also called the package substrate or base) provides:
 •	Mechanical support for the die
 •	Electrical connection to the PCB
@@ -245,10 +245,9 @@ Ceramic	Alumina (Al₂O₃), AlN	Used for high-reliability and high-temperature 
 Organic RDL (Redistribution Layer)	Polymer + metal interconnects	Used in advanced fan-out packages (e.g., TSMC InFO, FOWLP). Enables finer interconnect pitch.
 Silicon	Same material as the die	Used for 2.5D interposers (CoWoS). Enables precise wiring and high-density connections.
 Glass	Glass interposers or carriers	Offers high dimensional stability and low loss for RF/high-speed ICs. Emerging tech.
-________________________________________
-🔗 2. Options for Interconnections
+ 2. Options for Interconnections
 These refer to how the silicon die is electrically and mechanically connected to the package substrate.
-⚡ A. Wirebond
+ A. Wirebond
 •	Fine gold, copper, or aluminum wires connect the die pads to the substrate leads.
 •	Most common method for traditional packaging.
 •	Used in: QFP, QFN, TO, DIP.
@@ -262,8 +261,7 @@ Advantages:
 Limitations:
 •	Limited I/O density and signal speed.
 •	Longer connections → higher parasitic inductance.
-________________________________________
-⚙️ B. Bump/Solder (Flip-Chip Interconnect)
+ B. Bump/Solder (Flip-Chip Interconnect)
 •	The die is flipped upside-down, and solder bumps connect directly to the substrate.
 •	Typically used in BGAs, CSPs, PoP, and high-performance processors.
 Structure:
@@ -276,8 +274,7 @@ Advantages:
 Limitations:
 •	More expensive manufacturing.
 •	Requires precise alignment and underfill process.
-________________________________________
-🧠 Summary
+ Summary
 Interconnect Type	Method	Used In	Advantages	Limitations
 Wirebond	Wires from die pads to leads	QFP, QFN, DIP	Low cost, mature	High inductance, limited I/O
 Bump/Solder (Flip-Chip)	Solder bumps directly connect die	BGA, CSP, CoWoS	High performance, low parasitics	Expensive, complex process
@@ -286,16 +283,14 @@ Bump/Solder (Flip-Chip)	Solder bumps directly connect die	BGA, CSP, CoWoS	High p
 
 <img width="940" height="1095" alt="image" src="https://github.com/user-attachments/assets/a3577c14-54f0-4884-9e90-d24e62a58942" />
 This image shows the “Anatomy of Packages” — the internal structure of different semiconductor IC packages that use leadframe-based designs. Each sub-diagram represents a common package type used in electronic components.
-________________________________________
-🧱 1. Leadframe (Basic Structure)
+ 1. Leadframe (Basic Structure)
 A leadframe is a metallic frame that supports the silicon die and provides electrical connections to the outside world.
 It typically consists of:
 •	Die pad – where the silicon chip is mounted.
 •	Leads (pins) – connect the internal circuitry to external PCB.
 •	Bond wires – fine gold or copper wires connecting die pads to the leads.
 •	Molding compound / polymer overmold – protects the die and wires.
-________________________________________
-🔲 2. DIP (Dual In-line Package)
+ 2. DIP (Dual In-line Package)
 •	The oldest and simplest leadframe package.
 •	Pins extend out from two sides of the package body.
 •	Used in through-hole mounting (soldered into drilled PCB holes).
@@ -304,45 +299,39 @@ o	Silicon die mounted on a leadframe.
 o	Gold wirebonds connecting die pads to external leads.
 o	Epoxy mold encapsulates the chip.
 Typical Use: Legacy microcontrollers, logic ICs, op-amps.
-________________________________________
-🟧 3. QFN (Quad Flat No-lead)
+ 3. QFN (Quad Flat No-lead)
 •	A surface-mount package (no protruding leads).
 •	The die is wirebonded to copper pads underneath.
 •	Excellent thermal and electrical performance because the exposed pad on the bottom acts as a heat sink.
 •	Very compact and low-profile.
 Used in: High-speed and portable devices (wireless ICs, PMICs).
-________________________________________
-⚙️ 4. Leadframe-CSP (Chip Scale Package)
+ 4. Leadframe-CSP (Chip Scale Package)
 •	A miniaturized version of leadframe packages.
 •	The chip and leadframe are almost the same size (“chip-scale”).
 •	Uses gold wire for bonding and molding compound for protection.
 •	Optimized for very small, high-density PCB layouts.
-Used in: Smartphones, sensors, memory ICs.
-________________________________________
-🔳 5. Leadframe-QFP (Quad Flat Package)
+Used in: Smartphones, sensors, memory ICs
+ 5. Leadframe-QFP (Quad Flat Package)
 •	Similar to DIP, but with leads on all four sides.
 •	Larger lead count for complex ICs.
 •	The silicon die is mounted on a central die pad, wirebonded to leads, then molded.
 •	Supports surface mounting instead of through-hole.
 Used in: Microprocessors, ASICs, DSPs.
-________________________________________
-🔍 Summary Comparison
+ Summary Comparison
 Package Type	Mounting	Pin Layout	Key Advantage
 DIP	Through-hole	2 sides	Easy prototyping
 QFN	Surface-mount	Bottom pads	Compact, good heat dissipation
 Leadframe-CSP	Surface-mount	Bottom pads	Smallest form factor
 QFP	Surface-mount	4 sides	High pin count
-________________________________________
+
 In short, all these are leadframe-based packages—they share a metal frame and wirebond connection concept b
 
 <img width="761" height="1154" alt="image" src="https://github.com/user-attachments/assets/54c09369-0a81-4f34-92de-7c783b4c56c1" />
 This image shows the “Laminate-based Packages” — a class of IC packages that use organic laminate substrates (instead of metal leadframes) to interconnect and support the silicon die. These are commonly used in Ball Grid Array (BGA) and Chip Scale Package (CSP) families. Let’s go through each part.
-________________________________________
-🧱 1. Laminate Structure
+ 1. Laminate Structure
 Unlike leadframe packages (which use metal frames), laminate packages are built on a multi-layer PCB-like substrate that contains copper traces and vias.
 This substrate provides both mechanical support and electrical interconnection between the silicon die and the external solder balls.
-________________________________________
-🟠 2. Wire Bond PBGA (Plastic Ball Grid Array)
+2. Wire Bond PBGA (Plastic Ball Grid Array)
 Structure & Components:
 •	The silicon die is mounted face-up on the package substrate.
 •	Electrical connections between the die and substrate are made using fine gold wires (wire bonds).
@@ -352,8 +341,7 @@ Characteristics:
 •	Easier to manufacture, mature technology.
 •	Wire lengths add a bit of parasitic inductance → limits high-speed performance.
 Used in: General-purpose processors, ASICs, communication chips.
-________________________________________
-🔵 3. Flip Chip PBGA
+ 3. Flip Chip PBGA
 Structure & Components:
 •	The die is flipped upside down (active side facing downward).
 •	Electrical connections are made directly using solder bumps instead of wire bonds.
@@ -363,61 +351,52 @@ Advantages:
 •	Very short interconnects → low resistance, low inductance, better high-speed performance.
 •	Improved thermal conduction.
 Used in: High-performance CPUs, GPUs, network ICs.
-________________________________________
-🟢 4. PBGA (Plastic Ball Grid Array)
+ 4. PBGA (Plastic Ball Grid Array)
 This is the overall package family that includes both wire-bond and flip-chip versions.
 •	Uses solder balls arranged in a grid on the bottom surface.
 •	Provides good balance between performance, size, and cost.
-________________________________________
-🟣 5. LGA (Land Grid Array)
+ 5. LGA (Land Grid Array)
 •	Similar to BGA, but no solder balls are attached.
 •	Instead, it has flat metal pads (lands).
 •	Connection to PCB is made by spring-loaded pins or solder paste.
 Used in: CPUs and high-end FPGAs (e.g., Intel processors).
-________________________________________
-⚫ 6. FC-CSP (Flip Chip Chip Scale Package)
+ 6. FC-CSP (Flip Chip Chip Scale Package)
 •	A miniaturized flip-chip package.
 •	Combines flip-chip interconnects with CSP size — the package is almost the same size as the die.
 •	Offers excellent electrical performance and compact footprint.
 •	Solder balls at the bottom for mounting.
 Used in: Smartphones, RF modules, memory ICs.
-________________________________________
-🧩 Summary Table
+ Summary Table
 Package Type	Interconnect	Mounting	Key Feature	Applications
 Wire bond PBGA	Gold wire	BGA solder balls	Cost-effective, mature	Consumer & industrial ICs
 Flip chip PBGA	Solder bumps	BGA solder balls	High speed, low parasitics	CPUs, GPUs
 LGA	Flat pads	Socket or solder paste	Reusable, precise contact	Desktop CPUs
 FC-CSP	Flip chip bumps	BGA solder balls	Compact, high performance	Mobile, SoC, RF
-________________________________________
-🔍 Key Difference from Leadframe Packages
+ Key Difference from Leadframe Packages
 Leadframe packages (like DIP, QFN) use metal frames;
 Laminate packages (like PBGA, LGA, FC-CSP) use multi-layer organic substrates, enabling higher I/O density, faster signal routing, and better thermal management — ideal for modern high-performance chips.
 
 <img width="734" height="1105" alt="image" src="https://github.com/user-attachments/assets/3cdd48e4-8c35-494a-b120-96d796c4ad67" />
 This image explains Advanced Package Substrates, showing how semiconductor packaging has evolved from traditional 2D layouts to advanced 2.5D and 3D integration used in modern high-performance chips (e.g., AI, GPU, HBM memory stacks).
-Let’s break it down step by step 👇
-________________________________________
-🧱 1. 2D Packaging
+
+ 1. 2D Packaging
 •	Each die (chip) is placed side by side on a single FCBGA substrate (Flip Chip Ball Grid Array).
 •	The dies communicate through the substrate traces only.
 •	No direct die-to-die interconnects on top.
 Pros: Simple, mature, low cost.
 Cons: Long interconnects between dies → higher latency and power.
 Used in: Multi-chip modules, low-end SoCs.
-________________________________________
-⚙️ 2.1D Packaging
+ 2.1D Packaging
 •	Similar to 2D, but includes an RDL (Redistribution Layer) on top of the substrate.
 •	The RDL layer reroutes signals and allows finer interconnections between dies before going through the substrate.
 Advantage: Shorter inter-die connections, reduced parasitics, better performance.
 Used in: Medium-performance multi-chip SoCs.
-________________________________________
-🧩 3. 2.3D Packaging (Organic Interposer)
+ 3. 2.3D Packaging (Organic Interposer)
 •	Uses an organic interposer (made of polymer-based material) between the dies and the FCBGA substrate.
 •	The interposer provides wider and denser wiring than the substrate alone.
 •	Organic material keeps cost lower but offers limited wiring density.
 Used in: Cost-sensitive high-performance applications.
-________________________________________
-💎 4. 2.5D Packaging (Silicon Interposer)
+ 4. 2.5D Packaging (Silicon Interposer)
 •	Both dies are placed on a silicon interposer, which acts like a miniature silicon bridge with thousands of fine interconnects (TSVs or micro-bumps).
 •	The interposer connects dies directly — much faster than routing through the substrate.
 •	Beneath the interposer is still an FCBGA substrate for external board connections.
@@ -425,8 +404,7 @@ Key Benefit:
 Extremely high bandwidth and low latency between dies — ideal for memory-on-logic integration.
 Used in:
 High-end CPUs, GPUs, and AI accelerators (e.g., NVIDIA, AMD, Apple, Xilinx).
-________________________________________
-⚡ 5. Example – 2.5D CoWoS (Chip-on-Wafer-on-Substrate)
+ 5. Example – 2.5D CoWoS (Chip-on-Wafer-on-Substrate)
 Technology by: TSMC
 Structure:
 •	SoC and HBM (High Bandwidth Memory) dies are mounted on a silicon interposer.
@@ -436,15 +414,13 @@ Advantages:
 •	Ultra-high memory bandwidth (e.g., SoC ↔ HBM).
 •	Excellent signal integrity and thermal performance.
 •	Used in AI chips like NVIDIA A100, AMD MI300, etc.
-________________________________________
-🧮 Summary Comparison
+ Summary Comparison
 Type	Interconnect Medium	Integration Level	Example Use	Key Benefit
 2D	Substrate only	Low	Multi-chip module	Simple, cheap
 2.1D	RDL layer	Moderate	Heterogeneous SoC	Better routing
 2.3D	Organic interposer	Medium-high	Cost-effective high-perf ICs	Denser wiring
 2.5D	Silicon interposer	High	AI/CPU+HBM systems	High bandwidth, low latency
-________________________________________
-🔍 In short:
+ In short:
 As integration demands rise, packaging evolves from 2D → 2.1D → 2.3D → 2.5D, with shorter interconnects, higher I/O density, and faster communication between chips — all while maintaining thermal and power efficiency.
 
 <img width="419" height="397" alt="image" src="https://github.com/user-attachments/assets/be4ff604-25c7-4ba1-8074-5a3aaddececb" />
@@ -457,8 +433,7 @@ Even though this connection is not the most efficient, it is still better than h
 Use of RDL (Redistribution Layer)
 The Redistribution Layer (RDL) is a thin metal wiring layer used in advanced semiconductor packaging to reroute electrical connections from densely packed die pads to a different arrangement that matches the package or substrate.
 It plays a key role in 2.1D, 2.5D, and fan-out wafer-level packaging technologies.
-________________________________________
-⚙️ Purpose and Function
+ Purpose and Function
 1.	Signal Rerouting
 o	The die’s I/O pads are typically very close together.
 o	RDL redistributes these connections to wider-pitch solder bumps or balls, making them compatible with the package or PCB.
@@ -473,21 +448,18 @@ o	Shorter signal paths → lower resistance and inductance.
 o	Enables high-speed signal transmission and lower power loss.
 5.	Integration Flexibility
 o	RDL supports heterogeneous integration — connecting dies built on different process nodes or different functionalities (CPU + memory + analog).
-________________________________________
-🧱 Where RDL is Used
+Where RDL is Used
 Packaging Type	Role of RDL	Benefit
 2.1D Packaging	Connects dies side-by-side on the substrate	Enables short inter-die communication
 Fan-Out WLP / FOWLP	Redistributes I/O to larger solder bumps	Increases I/O density without interposer
 2.5D/3D ICs	Interfaces between micro-bumps and TSVs	High bandwidth & low parasitic interconnects
 System-in-Package (SiP)	Interconnects multiple heterogeneous dies	Compact integration of logic, RF, and memory
-________________________________________
-🧠 In short:
+ In short:
 The RDL layer acts like a micro-routing network — it spreads out or reorganizes the chip’s electrical contacts to improve connectivity, performance, and integration density in modern multi-die and fan-out packages.
 🧩 Role of an Interposer in Advanced Packaging
 An interposer is a thin intermediary layer (usually made of silicon or organic material) that sits between the silicon dies (chips) and the package substrate.
 It acts as a high-density wiring bridge, enabling very fast, short, and efficient electrical connections between multiple dies inside one package.
-________________________________________
-⚙️ Main Roles and Functions
+ Main Roles and Functions
 1.	High-Density Interconnection
 o	The interposer provides fine metal routing layers that connect different dies (CPU, GPU, HBM, etc.) with micron-scale precision.
 o	Enables thousands of tiny interconnects (micro-bumps) — far more than a normal package substrate can handle.
@@ -503,17 +475,15 @@ o	The silicon interposer can also act as a heat spreader, improving thermal mana
 5.	Support for 2.5D Packaging
 o	In 2.5D structures, the interposer lies below the dies and connects them laterally (side-by-side).
 o	Example: TSMC’s CoWoS (Chip-on-Wafer-on-Substrate) uses a silicon interposer to link an SoC die with multiple HBM (High Bandwidth Memory) stacks.
-________________________________________
-🧱 Types of Interposers
+ Types of Interposers
 Type	Material	Feature	Typical Use
 Silicon Interposer	Crystalline silicon	Ultra-fine wiring, supports TSVs	High-end 2.5D packages (CoWoS, EMIB)
 Organic Interposer	Polymer-based	Lower cost, coarser routing	2.3D mid-range packages
 Glass Interposer	Glass substrate	Low loss, good CTE matching	Emerging technology for RF/high-speed
-________________________________________
-💡 Summary
+ Summary
 The interposer acts as an intelligent bridge between multiple chips — enabling high-bandwidth, low-latency, and power-efficient communication that’s impossible with traditional package substrates.
 In short:
-🧠 It’s the key enabler of 2.5D integration, chiplet design, and modern AI/CPU-HBM systems.
+ It’s the key enabler of 2.5D integration, chiplet design, and modern AI/CPU-HBM systems.
 
 CoWoS------ nvidia package
 
@@ -537,13 +507,13 @@ there is a technology called chip on board
 <img width="940" height="528" alt="image" src="https://github.com/user-attachments/assets/8bae5a0c-a372-4e61-a15f-ff2fbf83d8ff" />
 This diagram explains different IC packaging architectures and how semiconductor chips connect to the Printed Circuit Board (PCB) through various levels of integration and interconnect complexity.
 Let’s go step-by-step:
-________________________________________
+
 1. Top Layer – Semiconductors
 This is where the actual chips are — these can be:
 •	Regular chips: standard single-die ICs.
 •	SoC (System-on-Chip): multiple functions integrated on one die.
 •	Chiplets: multiple smaller dies designed to work together as one system.
-________________________________________
+
 2. Packaging Types
 These define how the chips are combined and connected before reaching the board.
 (a) Single Chip Packaging
@@ -554,7 +524,7 @@ These define how the chips are combined and connected before reaching the board.
 •	Multiple dies in a single package.
 •	Inter-die communication occurs within the package.
 •	Used for higher performance, modularity, and yield improvement.
-________________________________________
+
 3. Interposer / Integration Methods
 Different interconnection approaches are shown — these are how multiple chips communicate:
 Integration Type	Description	Complexity
@@ -563,21 +533,21 @@ Integration Type	Description	Complexity
 2.3D	Uses TSV-less interposers (organic/inorganic materials).	Medium
 2.5D	Uses passive TSV interposer – interposer only routes signals (no active logic).	High
 3D	Uses active TSV interposer or vertical stacking with Through-Silicon Vias (TSVs).	Very High
-________________________________________
+
 4. Package Substrate (Carrier)
 •	Acts as a bridge layer between chips and the PCB.
 •	Provides signal routing, power delivery, and mechanical support.
 •	Materials: organic laminates, ceramics, or silicon-based interposers.
-________________________________________
+
 5. Printed Circuit Board (PCB)
 •	The final platform where the packaged IC is mounted.
 •	The PCB connects the package to the outside world (system).
-________________________________________
+
 6. Examples at the Bottom
 •	PBGA (Plastic Ball Grid Array): used for single-chip 2D packaging.
 •	fcCSP (Flip-Chip Chip Scale Package): compact flip-chip interconnect.
 •	2D → 3D: indicates the evolution from simple to advanced integration technologies.
-________________________________________
+
 In summary
 This image shows the evolution of chip packaging:
 •	From single-chip 2D → multichip 3D integration.
@@ -593,8 +563,7 @@ Summary
 <img width="827" height="483" alt="image" src="https://github.com/user-attachments/assets/ae64ac95-f0b7-44fc-b4c9-08e74ec36245" />
 This diagram titled “Anatomy of Packages” gives an overview of how different types of IC packages are built and how packaging has evolved from simple leadframe-based packages to advanced multi-die interposer-based systems.
 Let’s go section by section:
-________________________________________
-🧱 1. Leadframe-Based Packages (Left Side)
+ 1. Leadframe-Based Packages (Left Side)
 These are the traditional, low-cost packages used for simpler chips.
 DIP (Dual Inline Package)
 •	Contains a leadframe (metal structure) that supports the die.
@@ -609,8 +578,7 @@ Leadframe-CSP / Leadframe-QFP
 •	CSP (Chip Scale Package): Very small, package size ≈ chip size.
 •	QFP (Quad Flat Package): Has gull-wing leads extending from sides.
 •	These are improvements of DIP/QFN, with higher pin density and better thermal handling.
-________________________________________
-🧩 2. Laminate-Based Packages (Middle Section)
+2. Laminate-Based Packages (Middle Section)
 Used in more advanced single-die or flip-chip assemblies. The substrate replaces the leadframe.
 Wire Bond PBGA (Plastic Ball Grid Array)
 •	The die sits on a laminate substrate.
@@ -626,8 +594,7 @@ Examples Below
 •	PBGA: Plastic Ball Grid Array – common in CPUs/ASICs.
 •	LGA: Land Grid Array – pads instead of solder balls.
 •	FC-CSP: Flip-Chip Chip Scale Package – miniaturized flip-chip type.
-________________________________________
-🚀 3. Advanced Package Substrates (Right Side)
+ 3. Advanced Package Substrates (Right Side)
 Here, we enter multi-die and heterogeneous integration — multiple chips combined on one package.
 Packaging Type	Description	Integration Medium
 2D	Two dies placed side-by-side on the substrate.	FCBGA substrate only
@@ -635,14 +602,12 @@ Packaging Type	Description	Integration Medium
 2.3D	Uses an organic interposer for moderate signal routing between dies.	Organic interposer
 2.5D	Uses a silicon interposer with TSVs (Through-Silicon Vias) — higher wiring density and bandwidth.	Si interposer
 3D (not shown)	Dies stacked vertically with TSVs — true 3D integration.	Direct TSV stacking
-________________________________________
-🧠 Example: 2.5D CoWoS (Chip-on-Wafer-on-Substrate)
+Example: 2.5D CoWoS (Chip-on-Wafer-on-Substrate)
 Shown in the bottom-right image:
 •	Developed by TSMC.
 •	Combines SoC (logic die) and HBM (High Bandwidth Memory) on a silicon interposer, which sits on a substrate.
 •	Offers high bandwidth and low power for AI, GPUs, and HPC chips.
-________________________________________
-⚙️ Summary
+Summary
 Generation	Base Material	Example	Features
 Leadframe	Metal frame	DIP, QFN	Low cost, basic
 Laminate	Organic substrate	PBGA, FC-CSP	Moderate performance
@@ -665,8 +630,7 @@ Reliability	High (simple structure)	Good	High, but depends on interposer/TSV str
 Typical Applications	Low-cost ICs, analog, microcontrollers	Mobile SoCs, CPUs, GPUs	AI accelerators, HPC, HBM memory, chiplets
 Key Advantage	Low cost, easy assembly	Balanced performance and cost	Highest performance, bandwidth, and integration
 Key Limitation	Limited I/O and speed	Moderate interconnect density	Expensive and thermally complex
-________________________________________
-🔍 In summary
+In summary
 •	Leadframe → simple, cheap, and robust for traditional chips.
 •	Laminate → balances cost, size, and performance, widely used in modern SoCs.
 •	Advanced packages (2.5D/3D) → enable chiplet-based systems and high-bandwidth 
