@@ -90,36 +90,7 @@ Modeled thermal expansion and mechanical stress during temperature cycling.
 Packaging Prototype (2.5D)
 Created a conceptual chiplet-based package with RDL and interposer structure.
 
- # 📂 Repository Structure
- # Packaging_Fundamentals_Workshop/ #
-│
-# ├──  Module_1_Packaging_Evolution/
-# │   ├── notes.md
-│   ├── comparison_tables.xlsx
-│   └── figures/
-│
-├── Module_2_Wafer_to_Package/
-│   ├── assembly_flow.md
-│   ├── process_images/
-│   └── wafer_dicing_model/
-│
-├── Module_3_Thermal_Simulation/
-│   ├── flipchip_bga_project/
-│   ├── mesh_results/
-│   ├── temperature_contours/
-│   └── summary.md
-│
-├── Module_4_Reliability_Testing/
-│   ├── test_methods.md
-│   ├── reliability_data.xlsx
-│   └── validation_report.pdf
-│
-├── Module_5_Package_Modeling/
-│   ├── ansys_aedt_model/
-│   ├── mechanical_analysis/
-│   └── final_results.md
-│
-└── README.md
+
 
 📊 Key Technical Skills Gained
 
