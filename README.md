@@ -118,4 +118,7 @@ Reliability qualification for packaged ICs
 
 🧾 Certificate
 
+<img width="1238" height="878" alt="image" src="https://github.com/user-attachments/assets/db73d07b-e635-4620-ad9e-b0ff06142da9" />
+
+
 yet to receive
